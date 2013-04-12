@@ -1,15 +1,20 @@
-package oo_temperatures.units;
+package temperatures.units;
 
-class Kelvin extends TemperatureUnit
+public class Kelvin extends TemperatureUnit
 {
-	@override
+	@Override
 	public double fromKelvin(double kelvin_value)
 	{
 		return kelvin_value;
 	}
-	@override
+	@Override
 	public double toKelvin(double kelvin_value)
 	{
 		return kelvin_value;
+	}
+	@Override
+	public String getSuffix()
+	{
+		return "K";
 	}
 } 

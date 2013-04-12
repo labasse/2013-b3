@@ -1,15 +1,20 @@
-package oo_temperatures.units;
+package temperatures.units;
 
-class Celsius extends TemperatureUnit
+public class Celsius extends TemperatureUnit
 {
-	@override
+	@Override
 	public double fromKelvin(double kelvin_value)
 	{
 		return kelvin_value-273.15;
 	}
-	@override
+	@Override
 	public double toKelvin(double celsius_value)
 	{
 		return celsius_value+273.15;
+	}
+	@Override
+	public String getSuffix()
+	{
+		return "C";
 	}
 } 
